@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency calculator</title>
+</head>
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #675afe;
+}
+.wrapper{
+    width: 370px;
+    padding: 30px;
+    border-radius: 7px;
+    background: #fff;
+}
+.wrapper header{
+    font-size: 28px;
+    font-weight: 500px;
+    text-align: center;
+}
+.wrapper form{
+    margin: 40px 0 20px 0;
+}
+form p{
+    font-size: 18px;
+    margin-bottom: 5px;
+}  
+</style>
+<body>
+    <div class="wrapper">
+        <header>Currency converter</header>
+        <form action="/app.py" method="POST">
+            <div class="amount">
+                <p style="text-align:center;">Your result is</p><br>
+                <p style="text-align: center;">{{fincount}}</p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
